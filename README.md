@@ -1,6 +1,6 @@
 # Multi-factor authentication test
 
-##to set up
+## to set up
 ```
 docker-compose up
 export DATABASE_URL=postgres://admin:U2DkSdPFrgVpkvvL3j4kePNc4@localhost/twofactortest
