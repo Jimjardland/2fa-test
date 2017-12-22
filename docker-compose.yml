@@ -1,0 +1,29 @@
+version: "3.3"
+
+services:
+  postgres:
+    image: postgres:9.6.2
+    ports:
+      - ${PORTS__POSTGRES:-5432}:5432
+    environment:
+      - POSTGRES_USER=${POSTGRES__USER:-admin}
+      - POSTGRES_PASSWORD=${POSTGRES__PASS:-U2DkSdPFrgVpkvvL3j4kePNc4}
+      - POSTGRES_DB=${POSTGRES__DB:-twofactortest}
+      - POSTGRES_INITDB_ARGS=--encoding=utf8
+    networks:
+      2fa:
+        aliases:
+          - postgres
+  # api:
+  #     build: .
+  #     environment:
+  #       - DATABASE_URL=postgres://admin:U2DkSdPFrgVpkvvL3j4kePNc4@localhost/twofactortest
+  #     ports:
+  #       - "1339:1339"
+  #     networks:
+  #       2fa:
+  #         aliases:
+  #           - api
+networks:
+  2fa:
+    external: true

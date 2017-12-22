@@ -1,0 +1,23 @@
+{
+  "extends": "standard",
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "globals": {
+    "after": true,
+    "before": true,
+    "afterEach": true,
+    "beforeEach": true,
+    "describe": true,
+    "it": true,
+    "xit": true,
+    "xdescribe": true
+  },
+
+  "rules": {
+    "arrow-parens": 0,
+    "no-unexpected-multiline": 2,
+    "no-var": 2,
+    "prefer-const": 2
+  }
+}

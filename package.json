@@ -1,0 +1,26 @@
+{
+  "name": "2fa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "./node_modules/.bin/node-pg-migrate up",
+    "start": "node ./lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dedent": "^0.7.0",
+    "moment": "^2.20.1",
+    "node-pg-migrate": "^2.14.0",
+    "nodemon": "^1.14.1",
+    "pg": "^7.4.0",
+    "restify": "^6.3.4",
+    "simple-pg": "^1.0.0",
+    "text-encoding": "^0.6.4",
+    "zbase32": "0.0.2"
+  }
+}
